@@ -3,178 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Opo Finance - بروکر معتبر برای معاملات فارکس">
-    <meta name="keywords" content="فارکس, سیگنال VIP, بروکر, Opo Finance, آموزش فارکس">
+    <meta name="description" content="گروه CRFX - کانال VIP فارکس و آموزش‌های فارکس">
+    <meta name="keywords" content="فارکس, سیگنال VIP, بروکر, CRFX, آموزش فارکس">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Opo Finance - بروکر معتبر فارکس</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>گروه CRFX - کانال VIP فارکس</title>
     <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Vazir', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
             direction: rtl;
             text-align: center;
         }
         .header {
-            background-color: #0a4d68;
-            color: #fff;
             padding: 20px;
+            background-color: #111;
         }
         .header h1 {
-            margin: 0;
-            font-size: 2.5em;
+            color: #FFC300;
+            font-size: 3em;
+        }
+        .header h2 {
+            color: #00FFD1;
         }
         .nav {
-            background-color: #0c7a94;
+            background-color: #222;
             padding: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
         }
         .nav a {
-            color: #fff;
+            color: #00FFD1;
             margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
-            transition: color 0.3s;
+            position: relative;
+            padding: 10px;
+            transition: all 0.3s;
         }
         .nav a:hover {
-            color: #ffcc00;
+            color: #FFC300;
+        }
+        .nav a:before {
+            content: "💹"; /* ایموجی ترید */
+            position: absolute;
+            left: -30px; /* فاصله ایموجی */
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+        .nav a:hover:before {
+            transform: scale(1.3);
         }
         .main {
             padding: 20px;
         }
-        .service {
-            background-color: #fff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .service:hover {
-            transform: scale(1.02);
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
-            background-color: #00bcd4;
-            color: #fff;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #ffcc00;
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #0a4d68;
-            padding: 10px;
-            margin-top: 20px;
-            color: #fff;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        .comparison {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .comparison-card {
-            background-color: #fff;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
         .support-info, .about-us {
             margin-top: 20px;
             padding: 20px;
-            background-color: #fff;
+            background-color: #222;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px 2px #00FFD1;
+        }
+        footer {
+            background-color: #111;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .youtube-link {
+            margin-top: 20px;
+            color: #FFC300;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Opo Finance</h1>
-        <h2>بروکر معتبر برای معاملات فارکس</h2>
+        <h1>CRFX GROUP</h1>
+        <h2>کانال VIP فارکس</h2>
     </header>
 
     <nav class="nav">
-        <a href="#home">خانه</a>
-        <a href="#services">خدمات</a>
-        <a href="#comparison">مقایسه حساب‌ها</a>
-        <a href="#about-us">درباره ما</a>
+        <a href="#">خانه</a>
         <a href="#support">پشتیبانی</a>
-        <a href="#register">ثبت‌نام</a>
+        <a href="#about-us">درباره ما</a>
+        <a href="#contact">تماس با ما</a>
     </nav>
 
-    <section class="main" id="home">
-        <h3>خوش آمدید به Opo Finance</h3>
-        <p>ما بهترین خدمات فارکس را برای شما ارائه می‌دهیم. برای شروع تجارت خود با ما ثبت‌نام کنید.</p>
-
-        <div class="service" id="services">
-            <h4>خدمات ما</h4>
-            <p>• سیگنال‌های VIP</p>
-            <p>• پشتیبانی 24 ساعته</p>
-            <p>• آموزش‌های رایگان و ویدئوها</p>
-            <p><a href="#" class="cta-button">بیشتر بدانید</a></p>
-        </div>
-
-        <div class="comparison" id="comparison">
-            <h4>مقایسه حساب‌ها</h4>
-            <div class="comparison-card">
-                <h5>حساب استاندارد</h5>
-                <p>حداقل واریز: 100 دلار</p>
-                <p>کمسیون: 0.5%</p>
-                <p>لوریج: 1:100</p>
-                <a href="#" class="cta-button">ثبت‌نام</a>
-            </div>
-            <div class="comparison-card">
-                <h5>حساب VIP</h5>
-                <p>حداقل واریز: 500 دلار</p>
-                <p>کمسیون: 0.2%</p>
-                <p>لوریج: 1:200</p>
-                <a href="#" class="cta-button">ثبت‌نام</a>
-            </div>
-        </div>
-
-        <div class="about-us" id="about-us">
-            <h4>درباره ما</h4>
-            <p>گروه CRFX با سابقه چندین ساله در بازار فارکس تخصص در ارائه سیگنال‌های فارکس و پشتیبانی حرفه‌ای برای معامله‌گران دارد.</p>
-            <p>برای یادگیری بیشتر، به کانال یوتیوب ما مراجعه کنید:</p>
-            <p><a href="https://youtube.com/@samircrfxgroup?si=-YPUJoRS3PglXw3L" class="cta-button">آموزش فارکس در یوتیوب</a></p>
-        </div>
-
+    <section class="main">
         <div class="support-info" id="support">
-            <h4>پشتیبانی 24 ساعته</h4>
+            <h3>پشتیبانی 24 ساعته</h3>
             <p>ساعات پشتیبانی: 13:45 تا 17:45 و 21:00 تا 22:00 به وقت آلمان</p>
             <p><a href="https://t.me/cRFxfamily" class="cta-button">تماس با پشتیبانی</a></p>
         </div>
 
-        <div class="register" id="register">
-            <h4>ثبت‌نام</h4>
-            <p>برای عضویت در کانال VIP و استفاده از خدمات ویژه، ایمیل خود را وارد کنید:</p>
-            <form>
-                <input type="email" placeholder="ایمیل خود را وارد کنید" required>
-                <button type="submit" class="cta-button">ثبت‌نام</button>
-            </form>
+        <div class="about-us" id="about-us">
+            <h3>درباره ما</h3>
+            <p>گروه CRFX با سابقه چندین ساله در بازار فارکس تخصص در ارائه سیگنال‌های فارکس و پشتیبانی حرفه‌ای برای معامله‌گران دارد.</p>
+            <p>برای یادگیری بیشتر، به کانال یوتیوب ما مراجعه کنید:</p>
+            <p><a href="https://youtube.com/@samircrfxgroup?si=-YPUJoRS3PglXw3L" class="youtube-link">آموزش فارکس در یوتیوب</a></p>
         </div>
     </section>
 
     <footer>
-        <p>© 2024 Opo Finance. تمامی حقوق محفوظ است.</p>
+        <p>© 2024 گروه CRFX. تمامی حقوق محفوظ است.</p>
     </footer>
 </body>
-                                      </html>
+    </html>
