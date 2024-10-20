@@ -15,10 +15,13 @@
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         h1 {
             color: #FFC300; /* رنگ طلایی */
             font-size: 3em;
+            margin-top: 50px;
         }
         h2 {
             color: #00FFD1; /* رنگ فیروزه‌ای */
@@ -27,37 +30,66 @@
             margin-top: 20px;
         }
         .support-info {
-            color: #FFF;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 15px;
         }
         .conditions {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 15px;
             margin-top: 30px;
         }
-        .logo {
-            margin: 20px auto;
-            width: 200px;
-        }
-        .animation {
-            margin-top: 30px;
-        }
-        a {
-            color: #FFC300;
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #FFC300;
+            color: #000;
             text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
-        a:hover {
-            text-decoration: underline;
+        .btn:hover {
+            background-color: #FFD700;
+        }
+        .register-form {
+            margin-top: 30px;
+        }
+        input[type="email"], input[type="submit"] {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        input[type="email"] {
+            width: 300px;
+        }
+        input[type="submit"] {
+            background-color: #00FFD1;
+            color: #000;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #00E0B5;
+        }
+        footer {
+            margin-top: 50px;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            input[type="email"] {
+                width: 250px;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- لوگو -->
-        <img src="https://1drv.ms/i/c/809cde5921297f1a/ERVuauelE75KqBgm2fsNm7IBZM8M6au-VdMz2qMU731M2g" alt="CRFX Group Logo" class="logo">
-        
         <!-- عنوان -->
         <h1>CRFX GROUP - VIP Forex Channel</h1>
         
@@ -65,20 +97,28 @@
         <div class="support-info">
             <h2>پشتیبانی</h2>
             <p>ساعات کاری: 13:45 تا 17:45 و 21:00 تا 22:00 به وقت آلمان</p>
-            <p>ارتباط با پشتیبانی: <a href="https://t.me/cRFxfamily">کلیک کنید</a></p>
+            <p>ارتباط با پشتیبانی: <a href="https://t.me/cRFxfamily" class="btn">ارتباط با ما</a></p>
         </div>
         
         <!-- شرایط استفاده -->
         <div class="conditions">
             <h2>شرایط استفاده از سیگنال‌های VIP</h2>
-            <p>برای استفاده از سیگنال‌ها، در بروکر <a href="https://myaccount.opofinance.com/links/go/4445">Opo Finance</a> حساب باز کنید و پس از واریز پول، شناسه بروکر خود را به <a href="https://t.me/cRFxfamily">اینجا</a> ارسال کنید.</p>
+            <p>برای استفاده از سیگنال‌ها، در بروکر <a href="https://myaccount.opofinance.com/links/go/4445" class="btn">Opo Finance</a> حساب باز کنید و پس از واریز پول، شناسه بروکر خود را به <a href="https://t.me/cRFxfamily" class="btn">اینجا</a> ارسال کنید.</p>
         </div>
 
-        <!-- انیمیشن -->
-        <div class="animation">
-            <p>اینجا می‌توانید انیمیشن تریدینگ را اضافه کنید</p>
+        <!-- فرم ثبت‌نام -->
+        <div class="register-form">
+            <h2>ثبت‌نام برای دسترسی به سیگنال‌های VIP</h2>
+            <form action="/register" method="post">
+                <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+                <input type="submit" value="ثبت‌نام">
+            </form>
         </div>
     </div>
+
+    <footer>
+        <p>با سابقه چندین ساله در بازار فارکس - تمامی حقوق محفوظ است.</p>
+    </footer>
 
 </body>
                                        </html>
