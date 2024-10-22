@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            overflow-x: hidden;
         }
         .container {
             padding: 20px;
@@ -23,13 +24,12 @@
             color: #FFC300; /* رنگ طلایی */
             font-size: 3.5em;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(255, 195, 0, 0.5), 0px 0px 15px rgba(0, 255, 209, 0.75); /* سایه های طلایی و فیروزه‌ای */
+            text-shadow: 0 0 10px rgba(255, 195, 0, 1), 0px 0px 15px rgba(0, 255, 209, 0.75); /* سایه های طلایی و فیروزه‌ای */
             display: inline-block;
-            border: 2px solid #00FFD1; /* حاشیه فیروزه‌ای */
-            padding: 10px 20px;
+            padding: 20px 40px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 15px 3px #00FFD1;
+            box-shadow: 0px 0px 20px 5px #00FFD1;
         }
         h2 {
             color: #00FFD1; /* رنگ فیروزه‌ای */
@@ -39,7 +39,7 @@
             border: 2px solid #00FFD1; /* اضافه کردن قاب فیروزه‌ای */
             border-radius: 15px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             box-shadow: 0px 0px 15px 3px #00FFD1;
         }
         .btn {
@@ -51,16 +51,16 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            box-shadow: 0px 0px 10px 2px rgba(255, 195, 0, 0.8);
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
         .btn:hover {
             background-color: #FFD700;
+            box-shadow: 0px 0px 15px 5px rgba(255, 215, 0, 1);
         }
         footer {
             margin-top: 50px;
             color: #777;
-        }
-        .logo {
-            margin-top: 30px;
         }
         @media (max-width: 768px) {
             h1 {
@@ -75,8 +75,6 @@
 <body>
 
     <div class="container">
-        <!-- اضافه کردن لوگو -->
-        <img src="https://1drv.ms/i/c/809cde5921297f1a/ERVuauelE75KqBgm2fsNm7IBZM8M6au-VdMz2qMU731M2g" alt="CRFX Logo" class="logo" width="300">
         
         <!-- عنوان دیزاین شده -->
         <h1 class="logo-text">CRFX GROUP - VIP Forex Signals</h1>
