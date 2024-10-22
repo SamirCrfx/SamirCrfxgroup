@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRFX GROUP - VIP Forex Channel</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /* فونت زیبا */
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #000, #111); /* پس‌زمینه گرادیان */
             color: #fff;
             margin: 0;
             padding: 0;
@@ -24,24 +26,33 @@
             color: #FFC300; /* رنگ طلایی */
             font-size: 4em;
             font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 195, 0, 1), 0px 0px 15px rgba(0, 255, 209, 0.75); /* سایه های طلایی و فیروزه‌ای */
-            display: inline-block;
-            padding: 20px 40px;
+            text-shadow: 0 0 15px rgba(255, 195, 0, 1), 0px 0px 20px rgba(0, 255, 209, 1); /* سایه طلایی و فیروزه‌ای */
+            padding: 10px;
             border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 30px 10px #00FFD1, 0px 0px 20px 5px #FFC300;
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            animation: glow 1.5s infinite ease-in-out;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #FFC300, 0 0 20px #00FFD1; }
+            50% { text-shadow: 0 0 30px #FFC300, 0 0 40px #00FFD1; }
+            100% { text-shadow: 0 0 10px #FFC300, 0 0 20px #00FFD1; }
         }
         h2 {
             color: #00FFD1; /* رنگ فیروزه‌ای */
-            text-shadow: 0 0 10px rgba(0, 255, 209, 1), 0 0 5px rgba(0, 255, 209, 0.5);
+            text-shadow: 0 0 5px rgba(0, 255, 209, 1), 0 0 10px rgba(0, 255, 209, 0.5);
         }
         .support-info, .conditions, .youtube-info {
             margin-top: 30px;
-            border: 2px solid #00FFD1; /* اضافه کردن قاب فیروزه‌ای */
+            border: 1px solid #00FFD1; /* اضافه کردن قاب فیروزه‌ای */
             border-radius: 20px;
             padding: 30px;
-            background: rgba(0, 0, 0, 0.9);
-            box-shadow: 0px 0px 20px 10px #00FFD1, 0px 0px 10px 5px rgba(255, 195, 0, 0.5);
+            background: rgba(0, 0, 0, 0.85);
+            box-shadow: 0px 0px 20px 10px rgba(0, 255, 209, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .support-info:hover, .conditions:hover, .youtube-info:hover {
+            transform: scale(1.05); /* افکت بزرگ شدن هنگام هاور */
         }
         .btn {
             display: inline-block;
@@ -50,19 +61,19 @@
             background-color: #FFC300;
             color: #000;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 50px;
             font-weight: bold;
             font-size: 1.2em;
-            box-shadow: 0px 0px 15px 5px rgba(255, 195, 0, 1), 0px 0px 10px 5px rgba(0, 255, 209, 0.5);
-            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 0px 20px 10px rgba(255, 195, 0, 1);
+            transition: all 0.3s ease;
         }
         .btn:hover {
             background-color: #FFD700;
-            box-shadow: 0px 0px 20px 10px rgba(255, 215, 0, 1), 0px 0px 15px 10px rgba(0, 255, 209, 0.75);
+            box-shadow: 0px 0px 30px 15px rgba(255, 215, 0, 1), 0px 0px 20px 10px rgba(0, 255, 209, 0.75);
         }
         footer {
             margin-top: 50px;
-            color: #777;
+            color: #888;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
         }
         @media (max-width: 768px) {
